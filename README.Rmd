@@ -7,7 +7,7 @@ output: github_document
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = ""
 )
 ```
 
@@ -18,6 +18,13 @@ A series of meetups about data pipelines with the package
 
 The anatomy of a poorly structured project:
 
-```{r}
+```{r echo=FALSE}
 fs::dir_tree()
 ```
+
+Example of an analysis script:
+
+```{r echo=FALSE}
+writeLines(readLines("03_analysis-mtcars.R"))
+```
+
