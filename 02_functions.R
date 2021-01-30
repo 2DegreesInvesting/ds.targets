@@ -87,23 +87,26 @@ mean_of_numerics <- function(data, by) {
 #'
 #' @examples
 #' xy <- c("hp", "mpg")
+#' mtcars %>% plot_xy(xy)
 #' mtcars %>% plot_xy(xy, by = "cyl")
-plot_xy <- function(data, xy, by) {
+plot_xy <- function(data, xy, by = NULL) {
   pause()
 
   x <- xy[[1]]
   y <- xy[[2]]
-  ggplot(data, aes(.data[[x]], .data[[y]])) +
+  p <- ggplot(data, aes(.data[[x]], .data[[y]])) +
     geom_point() +
-    theme_classic() +
-    facet_wrap(vars(.data[[by]]))
+    theme_classic()
+
+  if (is.null(by)) return(p)
+  p + facet_wrap(vars(.data[[by]]))
 }
 
 # Helpers -----------------------------------------------------------------
 
 pause <- function() {
   default <- 0L
-  custom <- getOption("sleep")
+  custom <- getOption("pause")
 
   if (is.null(custom)) {
     Sys.sleep(default)
