@@ -1,21 +1,3 @@
-#' Create a URL to get content from GitHub
-#'
-#' @param dataset String. A dataset, e.g. "mtcars.tsv".
-#' @param from String. An owner/repo specification.
-#' @param branch String. The name of a branch.
-#'
-#' @return A string.
-#' @export
-#'
-#' @examples
-#' url <- github_url("mtcars.tsv", from = "2DegreesInvesting/ds-targets-data")
-#' vroom::vroom(url)
-github_url <- function(dataset, from, branch = NULL) {
-  base <- "https://raw.githubusercontent.com"
-  branch <- branch %||% "main"
-  glue("{base}/{from}/{branch}/{dataset}")
-}
-
 #' Read a delimited file into a tibble
 #'
 #' @param ... Arguments passed to [voom::vroom()].

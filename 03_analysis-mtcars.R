@@ -9,7 +9,7 @@ source(r_path("02_functions.R"))
 
 # Parameters --------------------------------------------------------------
 
-dataset <- github_url("mtcars.tsv", from = "2DegreesInvesting/ds-targets-data")
+dataset <- "http://bit.ly/mtcars_tsv"
 groups <- c("cyl", "carb")
 axes <- c("hp", "mpg")
 facets <- "cyl"

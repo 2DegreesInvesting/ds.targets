@@ -9,7 +9,7 @@ source(r_path("02_functions.R"))
 
 # Parameters --------------------------------------------------------------
 
-dataset <- github_url("iris.tsv", from = "2DegreesInvesting/ds-targets-data")
+dataset <-"http://bit.ly/iris_tsv"
 groups <- c("species")
 axes <- c("sepal_length", "sepal_width")
 facets <- NULL
