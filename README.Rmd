@@ -15,3 +15,10 @@ knitr::opts_chunk$set(
 
 A series of meetups about data pipelines with the package
 "[targets](https://docs.ropensci.org/targets/)".
+
+The anatomy of a poorly structured project:
+
+```{r}
+fs::dir_tree()
+```
+

@@ -10,8 +10,9 @@ source(r_path("02_functions.R"))
 # Parameters --------------------------------------------------------------
 
 dataset <- github_url("mtcars.tsv", from = "2DegreesInvesting/ds-targets-data")
-summary_by <- c("cyl", "carb")
-xy_columns <- c("hp", "mpg")
+groups <- c("cyl", "carb")
+axes <- c("hp", "mpg")
+facets <- "cyl"
 
 # Data --------------------------------------------------------------------
 
@@ -21,7 +22,7 @@ xy_columns <- c("hp", "mpg")
 
 (prep <- raw %>% prepare())
 
-(means <- prep %>% mean_of_numerics(summary_by))
+(means <- prep %>% mean_of_numerics(groups))
 
-means %>% plot_xy(xy_columns, by = "cyl")
+means %>% plot_xy(axes, by = facets)
 
