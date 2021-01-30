@@ -14,22 +14,14 @@ The anatomy of a poorly structured project:
     ├── 03_analysis-iris.R
     ├── 03_analysis-mtcars.R
     ├── 03_analysis.Rmd
-    ├── 03_analysis.html
     ├── 03_analysis.md
     ├── 03_analysis_files
     │   └── figure-gfm
-    │       ├── unnamed-chunk-2-1.png
-    │       └── unnamed-chunk-6-1.png
+    │       └── unnamed-chunk-2-1.png
     ├── LICENSE.md
     ├── README.Rmd
     ├── README.md
-    ├── ds-targets.Rproj
-    └── rsconnect
-        └── documents
-            └── 03_analysis.Rmd
-                └── bookdown.org
-                    └── maurolepore
-                        └── 03_analysis.dcf
+    └── ds-targets.Rproj
 
 Example of an analysis script:
 
