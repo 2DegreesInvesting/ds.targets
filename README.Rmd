@@ -21,4 +21,3 @@ The anatomy of a poorly structured project:
 ```{r}
 fs::dir_tree()
 ```
-

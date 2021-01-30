@@ -13,6 +13,7 @@ fs::dir_tree()
 #> .
 #> ├── 01_packages.R
 #> ├── 02_functions.R
+#> ├── 03_analysis-iris.R
 #> ├── 03_analysis-mtcars.R
 #> ├── LICENSE.md
 #> ├── README.Rmd

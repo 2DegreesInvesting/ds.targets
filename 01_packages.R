@@ -7,5 +7,3 @@ suppressPackageStartupMessages({
   library(janitor)
   library(pins)
 })
-
-

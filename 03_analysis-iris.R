@@ -25,4 +25,3 @@ facets <- NULL
 (means <- prep %>% mean_of_numerics(groups))
 
 means %>% plot_xy(axes, by = facets)
-

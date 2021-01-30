@@ -73,7 +73,7 @@ mean_of_numerics <- function(data, by) {
   pause()
 
   data %>%
-    group_by(!!! rlang::syms(by)) %>%
+    group_by(!!!rlang::syms(by)) %>%
     summarise(across(where(is.double), .fns = mean), .groups = "drop")
 }
 
@@ -98,7 +98,9 @@ plot_xy <- function(data, xy, by = NULL) {
     geom_point() +
     theme_classic()
 
-  if (is.null(by)) return(p)
+  if (is.null(by)) {
+    return(p)
+  }
   p + facet_wrap(vars(.data[[by]]))
 }
 
@@ -114,4 +116,3 @@ pause <- function() {
     Sys.sleep(custom)
   }
 }
-
