@@ -62,20 +62,20 @@ mean_of_numerics <- function(data, by) {
 #' Create a classic scatterplot with optional facets
 #'
 #' @param data A data frame.
+#' @param x,y Strings. The axes of the plot.
 #' @param ... Passed to [ggplot2::aes()].
 #'
 #' @return A ggplot.
 #' @export
 #'
 #' @examples
-#' xy <- c("hp", "mpg")
-#' mtcars %>% plot_xy(xy)
-#' mtcars %>% plot_xy(xy, by = "cyl")
-plot_xy <- function(data, xy, by = NULL) {
+#' x <- "hp"
+#' y <- "mpg"
+#' datasets::mtcars %>% plot_xy(x, y)
+#' datasets::mtcars %>% plot_xy(x, y, by = "cyl")
+plot_xy <- function(data, x, y, by = NULL) {
   pause()
 
-  x <- xy[[1]]
-  y <- xy[[2]]
   p <- ggplot(data, aes(.data[[x]], .data[[y]])) +
     geom_point() +
     theme_classic()

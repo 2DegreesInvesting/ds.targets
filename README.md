@@ -14,14 +14,22 @@ The anatomy of a poorly structured project:
     ├── 03_analysis-iris.R
     ├── 03_analysis-mtcars.R
     ├── 03_analysis.Rmd
+    ├── 03_analysis.html
     ├── 03_analysis.md
     ├── 03_analysis_files
     │   └── figure-gfm
-    │       └── unnamed-chunk-2-1.png
+    │       ├── unnamed-chunk-2-1.png
+    │       └── unnamed-chunk-6-1.png
     ├── LICENSE.md
     ├── README.Rmd
     ├── README.md
-    └── ds-targets.Rproj
+    ├── ds-targets.Rproj
+    └── rsconnect
+        └── documents
+            └── 03_analysis.Rmd
+                └── bookdown.org
+                    └── maurolepore
+                        └── 03_analysis.dcf
 
 Example of an analysis script:
 
@@ -37,8 +45,9 @@ Example of an analysis script:
     # Parameters --------------------------------------------------------------
 
     dataset <- "http://bit.ly/mtcars_tsv"
-    groups <- c("cyl", "carb")
-    axes <- c("hp", "mpg")
+    group <- c("cyl", "carb")
+    x <- "hp"
+    y <- "mpg"
     facets <- "cyl"
 
     # Data --------------------------------------------------------------------
@@ -49,6 +58,6 @@ Example of an analysis script:
 
     (prep <- raw %>% prepare())
 
-    (means <- prep %>% mean_of_numerics(groups))
+    (means <- prep %>% mean_of_numerics(group))
 
-    means %>% plot_xy(axes, by = facets)
+    means %>% plot_xy(x, y, by = facets)

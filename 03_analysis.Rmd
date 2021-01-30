@@ -1,10 +1,11 @@
 ---
-output: github_document
+output: html_document
 params:
-  dataset: "http://bit.ly/mtcars_tsv"
-  groups: !r c("species")
-  axes: !r c("sepal_length", "sepal_width")
-  facets: !r NULL
+  dataset: "http://bit.ly/iris_tsv"
+  group: "species"
+  x: "sepal_length"
+  y: "sepal_width"
+  facets: "species"
 ---
 
 ```{r, include = FALSE}
@@ -16,7 +17,7 @@ knitr::opts_chunk$set(
 
 ```{r}
 # Analyze a dataset: Clean it and summarize and plot the mean values of numeric
-# variebles, optionally by groups.
+# variebles, optionally by a group.
 
 # Setup -------------------------------------------------------------------
 
@@ -27,8 +28,9 @@ source(r_path("02_functions.R"))
 # Parameters --------------------------------------------------------------
 
 (dataset <- params$dataset)
-(groups <- params$groups)
-(axes <- params$axes)
+(group <- params$group)
+(x <- params$x)
+(y <- params$y)
 (facets <- params$facets)
 
 # Data --------------------------------------------------------------------
@@ -39,9 +41,8 @@ source(r_path("02_functions.R"))
 
 (prep <- raw %>% prepare())
 
-(means <- prep %>% mean_of_numerics(groups))
+(means <- prep %>% mean_of_numerics(group))
 
-means %>% plot_xy(axes, by = facets)
-
+means %>% plot_xy(x, y, by = facets)
 ```
 

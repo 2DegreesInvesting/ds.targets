@@ -27,4 +27,3 @@ Example of an analysis script:
 ```{r echo=FALSE}
 writeLines(readLines("03_analysis-mtcars.R"))
 ```
-

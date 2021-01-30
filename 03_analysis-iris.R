@@ -1,5 +1,5 @@
 # Analyze a dataset: Clean it and summarize and plot the mean values of numeric
-# variebles, optionally by groups.
+# variebles, optionally by a group.
 
 # Setup -------------------------------------------------------------------
 
@@ -10,8 +10,9 @@ source(r_path("02_functions.R"))
 # Parameters --------------------------------------------------------------
 
 dataset <-"http://bit.ly/iris_tsv"
-groups <- c("species")
-axes <- c("sepal_length", "sepal_width")
+group <- "species"
+x <- "sepal_length"
+y <- "sepal_width"
 facets <- NULL
 
 # Data --------------------------------------------------------------------
@@ -22,6 +23,6 @@ facets <- NULL
 
 (prep <- raw %>% prepare())
 
-(means <- prep %>% mean_of_numerics(groups))
+(means <- prep %>% mean_of_numerics(group))
 
-means %>% plot_xy(axes, by = facets)
+means %>% plot_xy(x, y, by = facets)

@@ -10,8 +10,9 @@ source(r_path("02_functions.R"))
 # Parameters --------------------------------------------------------------
 
 dataset <- "http://bit.ly/mtcars_tsv"
-groups <- c("cyl", "carb")
-axes <- c("hp", "mpg")
+group <- c("cyl", "carb")
+x <- "hp"
+y <- "mpg"
 facets <- "cyl"
 
 # Data --------------------------------------------------------------------
@@ -22,6 +23,6 @@ facets <- "cyl"
 
 (prep <- raw %>% prepare())
 
-(means <- prep %>% mean_of_numerics(groups))
+(means <- prep %>% mean_of_numerics(group))
 
-means %>% plot_xy(axes, by = facets)
+means %>% plot_xy(x, y, by = facets)
