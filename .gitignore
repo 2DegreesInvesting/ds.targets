@@ -1,1 +1,8 @@
 .Rproj.user
+analysis_cache/
+toy_cache/
+_targets
+report-targets_cache
+report-vanilla_cache
+report-targets.html
+.Rhistory
