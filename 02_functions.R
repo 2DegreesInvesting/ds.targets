@@ -16,20 +16,6 @@ github_url <- function(dataset, from, branch = NULL) {
   glue("{base}/{from}/{branch}/{dataset}")
 }
 
-#' Create a path into the directory data/
-#'
-#' @param ... Arguments to pass to [here::here()].
-#'
-#' @return A character vector.
-#' @export
-#'
-#' @examples
-#' data_path()
-#' data_path("path", "to", "file.ext")
-data_path <- function(...) {
-  here("data", ...)
-}
-
 #' Read a delimited file into a tibble
 #'
 #' @param ... Arguments passed to [voom::vroom()].
