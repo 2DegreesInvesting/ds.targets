@@ -10,7 +10,8 @@ A series of meetups about data pipelines with the package
 
 ### Motivation
 
-By Will Landau.
+[Meet Will
+Landau](https://github.com/2DegreesInvesting/ds-incubator/issues/70).
 
 ### Walkthrough
 
