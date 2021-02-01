@@ -6,68 +6,57 @@
 A series of meetups about data pipelines with the package
 “[targets](https://docs.ropensci.org/targets/)”.
 
-The anatomy of a poorly structured project:
+## Syllabus
 
-    .
-    ├── 01_packages.R
-    ├── 02_functions.R
-    ├── 03_analysis-iris.R
-    ├── 03_analysis-mtcars.R
-    ├── 03_analysis.Rmd
-    ├── 03_analysis.md
-    ├── 03_analysis_files
-    │   └── figure-gfm
-    │       └── unnamed-chunk-2-1.png
-    ├── LICENSE.md
-    ├── README.Rmd
-    ├── README.md
-    ├── _targets
-    │   ├── meta
-    │   │   ├── meta
-    │   │   └── progress
-    │   └── objects
-    │       ├── data
-    │       └── summary
-    ├── _targets.R
-    └── ds-targets.Rproj
+### 1. Motivation
 
-Example of an analysis script:
+By Will Landau.
 
-    # Analyze a dataset: Clean it and summarize and plot the mean values of numeric
-    # variebles, optionally by groups.
+### 2. Walkthrough
 
-    # Setup -------------------------------------------------------------------
+Setup a minimal targets project from scratch.
 
-    r_path <- function(...) here::here(...)
-    source(r_path("01_packages.R"))
-    source(r_path("02_functions.R"))
-
-    # Parameters --------------------------------------------------------------
-
-    dataset <- "http://bit.ly/mtcars_tsv"
-    group <- c("cyl", "carb")
-    x <- "hp"
-    y <- "mpg"
-    facets <- "cyl"
-
-    # Data --------------------------------------------------------------------
-
-    (raw <- vroom(dataset, col_types = cols()))
-
-    # Analysis ----------------------------------------------------------------
-
-    (prep <- raw %>% prepare())
-
-    (means <- prep %>% mean_of_numerics(group))
-
-    means %>% plot_xy(x, y, by = facets)
-
-## Schedule
-
-### Day 1: How to setup a minimal targets project and why
-
-Objectives
+Objectives:
 
 -   Setup from scratch.
+
 -   Understand the benefit.
--   Learn the most useful functions.
+
+-   Learn the most useful functions:
+
+    -   `tar_script()`.
+    -   `tar_option_set()`.
+    -   `tar_target()`.
+    -   `tar_make()`.
+    -   `tar_read()`, `tar_load()`.
+    -   `tar_visnetwork()`.
+
+-   Create a report that uses targets.
+
+### Debugging
+
+-   …
+
+### Functions
+
+-   …
+
+### Best practices
+
+-   …
+
+### External files and literate programming
+
+-   …
+
+### Dynamic branching
+
+-   …
+
+### Static branching
+
+-   …
+
+### Use cases
+
+-   …
