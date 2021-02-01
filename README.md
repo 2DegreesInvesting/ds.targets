@@ -8,11 +8,11 @@ A series of meetups about data pipelines with the package
 
 ## Syllabus
 
-### 1. Motivation
+### Motivation
 
 By Will Landau.
 
-### 2. Walkthrough
+### Walkthrough
 
 Setup a minimal targets project from scratch.
 
