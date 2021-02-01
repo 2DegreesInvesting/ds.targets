@@ -27,3 +27,13 @@ Example of an analysis script:
 ```{r echo=FALSE}
 writeLines(readLines("03_analysis-mtcars.R"))
 ```
+## Schedule
+
+### Day 1: How to setup a minimal targets project and why
+
+Objectives
+
+* Setup from scratch.
+* Understand the benefit.
+* Learn the most useful functions.
+

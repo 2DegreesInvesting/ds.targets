@@ -21,6 +21,14 @@ The anatomy of a poorly structured project:
     ├── LICENSE.md
     ├── README.Rmd
     ├── README.md
+    ├── _targets
+    │   ├── meta
+    │   │   ├── meta
+    │   │   └── progress
+    │   └── objects
+    │       ├── data
+    │       └── summary
+    ├── _targets.R
     └── ds-targets.Rproj
 
 Example of an analysis script:
@@ -53,3 +61,13 @@ Example of an analysis script:
     (means <- prep %>% mean_of_numerics(group))
 
     means %>% plot_xy(x, y, by = facets)
+
+## Schedule
+
+### Day 1: How to setup a minimal targets project and why
+
+Objectives
+
+-   Setup from scratch.
+-   Understand the benefit.
+-   Learn the most useful functions.
