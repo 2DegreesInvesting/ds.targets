@@ -31,41 +31,16 @@ Objectives:
 * Setup from scratch.
 * Understand the benefit.
 * Learn the most useful functions:
-
   * `tar_script()`.
-  * `tar_option_set()`.
-  * `tar_target()`.
+  * `tar_edit()`.
   * `tar_make()`.
-  * `tar_read()`, `tar_load()`.
   * `tar_visnetwork()`.
-  
+  * `tar_objects()`.
+  * `tar_read()`.
 * Create a report that uses targets.
 
-### Debugging
+### Next
 
-* ...
-
-### Functions
-
-* ...
-
-### Best practices
-
-* ...
-
-### External files and literate programming
-
-* ...
-
-### Dynamic branching
-
-* ...
-
-### Static branching
-
-* ...
-
-### Use cases
-
-* ...
-
+The rest of the series will likely cover debugging, functions, external files
+and literate programming, and branching -- following [targets'
+manual](https://books.ropensci.org/targets/) but loosely.
