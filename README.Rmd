@@ -28,9 +28,9 @@ Setup a minimal targets project from scratch.
 
 Objectives:
 
-* Setup a file "_targets.R" and explore its [structure](https://books.ropensci.org/targets/walkthrough.html#file-structure).
-* Understand the benefit.
-* Learn the most useful functions:
+* Setup a file "_targets.R" and explore its
+[structure](https://books.ropensci.org/targets/walkthrough.html#file-structure).
+* Try common functions:
   * `tar_script()`.
   * `tar_edit()`.
   * `tar_glimpse()`.
@@ -38,10 +38,15 @@ Objectives:
   * `tar_visnetwork()`.
   * `tar_objects()`.
   * `tar_read()`.
-* Create a report that uses targets.
+* Create a report using targets.
+* Understand the benefit.
 
 ### Next
 
-The rest of the series will likely cover debugging, functions, external files
-and literate programming, and branching -- following [targets'
-manual](https://books.ropensci.org/targets/) but loosely.
+The rest of the series will likely cover these topics:
+* Debugging.
+* Functions.
+* External files and literate programming.
+* Branching.
+
+We'll follow [targets' manual](https://books.ropensci.org/targets/) but loosely.

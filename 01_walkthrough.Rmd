@@ -19,6 +19,8 @@ Use targets.
 library(targets)
 ```
 
+## The structure of _targets.R
+
 Write a _targets.R script to the current working directory.
 
 ```r
@@ -67,6 +69,8 @@ Visualise the pipeline once again (slower than `tar_glimpse()`)
 tar_visnetwork()
 ```
 
+## Report using targets
+
 Use the targets we have just made, e.g. to report your analysis results.
 
 ```{r}
@@ -80,7 +84,7 @@ tar_read(summary)
 plot(data)
 ```
 
-## Compare
+## Benefit
 
 * Add `Sys.sleep(3)` into `summ()`.
 * Compare running `tar_make()` vs. this, two or more times:

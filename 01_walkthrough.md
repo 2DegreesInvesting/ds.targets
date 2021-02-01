@@ -9,6 +9,8 @@ Use targets.
 library(targets)
 ```
 
+## The structure of \_targets.R
+
 Write a \_targets.R script to the current working directory.
 
 ``` r
@@ -112,7 +114,7 @@ plot(data)
 
 ![](01_walkthrough_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
-## Compare
+## Benefit
 
 -   Add `Sys.sleep(3)` into `summ()`.
 -   Compare running `tar_make()` vs. this, two or more times:
