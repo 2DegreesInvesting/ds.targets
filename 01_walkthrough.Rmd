@@ -1,0 +1,76 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Walkthrough
+
+Use targets.
+
+```{r}
+library(targets)
+```
+
+Write a _targets.R script to the current working directory.
+
+```r
+tar_script()
+```
+
+Helper.
+
+```{r}
+show <- function(path) {
+  lines <- readLines(here::here(path))
+  header <- paste("\n#", path)
+  out <- writeLines(c(header, lines))
+  out
+}
+```
+
+Show contents.
+
+```{r comment=""}
+show("_targets.R")
+```
+
+
+Open _targets.R for editing.
+
+```r
+tar_edit()
+```
+
+Run a pipeline of targets.
+
+```r
+tar_make()
+```
+
+Visualize an abridged fast dependency graph.
+
+```{r}
+tar_visnetwork()
+```
+
+Use the targets we have just made, e.g. to report your analysis results.
+
+```{r}
+tar_objects()
+
+data <- tar_read(data)
+head(data)
+
+tar_read(summary)
+
+plot(data)
+```
+
