@@ -89,30 +89,27 @@ tar_visnetwork()
 
 ![](01_walkthrough_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
-Use the targets we have just made, e.g. to report your analysis results.
+## Report using targets
+
+Use the targets we have just made, e.g. to report the results of your
+analysis.
 
 ``` r
 tar_objects()
 #> [1] "data"    "summary"
 
 data <- tar_read(data)
-head(data)
-#>    x  y
-#> 1 73 78
-#> 2 24 93
-#> 3 15 31
-#> 4  4 67
-#> 5 86 40
-#> 6 64 34
-
-tar_read(summary)
-#>   mean_x
-#> 1   50.5
-
 plot(data)
 ```
 
 ![](01_walkthrough_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+
+``` r
+tar_load(summary)
+summary
+#>   mean_x
+#> 1   50.5
+```
 
 ## Benefit
 

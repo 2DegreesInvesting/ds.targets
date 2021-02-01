@@ -71,17 +71,16 @@ tar_visnetwork()
 
 ## Report using targets
 
-Use the targets we have just made, e.g. to report your analysis results.
+Use the targets we have just made, e.g. to report the results of your analysis.
 
 ```{r}
 tar_objects()
 
 data <- tar_read(data)
-head(data)
-
-tar_read(summary)
-
 plot(data)
+
+tar_load(summary)
+summary
 ```
 
 ## Benefit
