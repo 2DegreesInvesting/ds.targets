@@ -49,13 +49,19 @@ Open _targets.R for editing.
 tar_edit()
 ```
 
+Quickly glimpse the pipeline before an expensive run.
+
+```{r}
+tar_glimpse()
+```
+
 Run a pipeline of targets.
 
 ```r
 tar_make()
 ```
 
-Visualize an abridged fast dependency graph.
+Visualise the pipeline once again (slower than `tar_glimpse()`)
 
 ```{r}
 tar_visnetwork()
@@ -72,5 +78,25 @@ head(data)
 tar_read(summary)
 
 plot(data)
+```
+
+## Compare
+
+* Add `Sys.sleep(3)` into `summ()`.
+* Compare running `tar_make()` vs. this, two or more times:
+
+```r
+library(dplyr)
+
+summ <- function(dataset) {
+  Sys.sleep(3)
+  summarize(dataset, mean_x = mean(x))
+}
+
+data <- data.frame(x = sample.int(100), y = sample.int(100))
+
+system.time(
+  summ(data)
+)
 ```
 

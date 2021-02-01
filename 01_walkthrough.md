@@ -44,6 +44,7 @@ library(targets)
 # This is where you write source(\"R/functions.R\")
 # if you keep your functions in external scripts.
 summ <- function(dataset) {
+  Sys.sleep(5)
   summarize(dataset, mean_x = mean(x))
 }
 
@@ -64,19 +65,27 @@ Open \_targets.R for editing.
 tar_edit()
 ```
 
+Quickly glimpse the pipeline before an expensive run.
+
+``` r
+tar_glimpse()
+```
+
+![](01_walkthrough_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+
 Run a pipeline of targets.
 
 ``` r
 tar_make()
 ```
 
-Visualize an abridged fast dependency graph.
+Visualise the pipeline once again (slower than `tar_glimpse()`)
 
 ``` r
 tar_visnetwork()
 ```
 
-![](01_walkthrough_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](01_walkthrough_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
 Use the targets we have just made, e.g. to report your analysis results.
 
@@ -101,4 +110,24 @@ tar_read(summary)
 plot(data)
 ```
 
-![](01_walkthrough_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![](01_walkthrough_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+
+## Compare
+
+-   Add `Sys.sleep(3)` into `summ()`.
+-   Compare running `tar_make()` vs. this, two or more times:
+
+``` r
+library(dplyr)
+
+summ <- function(dataset) {
+  Sys.sleep(3)
+  summarize(dataset, mean_x = mean(x))
+}
+
+data <- data.frame(x = sample.int(100), y = sample.int(100))
+
+system.time(
+  summ(data)
+)
+```

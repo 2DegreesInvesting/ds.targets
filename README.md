@@ -25,6 +25,7 @@ Objectives:
 -   Learn the most useful functions:
     -   `tar_script()`.
     -   `tar_edit()`.
+    -   `tar_glimpse()`.
     -   `tar_make()`.
     -   `tar_visnetwork()`.
     -   `tar_objects()`.

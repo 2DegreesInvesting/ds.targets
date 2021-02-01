@@ -10,6 +10,7 @@ library(targets)
 # This is where you write source(\"R/functions.R\")
 # if you keep your functions in external scripts.
 summ <- function(dataset) {
+  Sys.sleep(5)
   summarize(dataset, mean_x = mean(x))
 }
 
