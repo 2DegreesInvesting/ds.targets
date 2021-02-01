@@ -19,7 +19,8 @@ Setup a minimal targets project from scratch.
 
 Objectives:
 
--   Setup from scratch.
+-   Setup a file "\_targets.R" and explore its
+    [structure](https://books.ropensci.org/targets/walkthrough.html#file-structure).
 -   Understand the benefit.
 -   Learn the most useful functions:
     -   `tar_script()`.
