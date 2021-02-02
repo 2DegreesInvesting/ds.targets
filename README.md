@@ -34,9 +34,12 @@ Objectives:
 
 ### Next
 
-The rest of the series will likely cover these topics: \* Functions:
-Moving from a sequence of scripts to a pipeline of functions. \* Best
-practices. \* Debugging.
+The rest of the series will likely cover these topics:
+
+-   Functions: Moving from a sequence of scripts to a pipeline of
+    functions.
+-   Best practices.
+-   Debugging.
 
 We’ll follow [targets’ manual](https://books.ropensci.org/targets/) but
 loosely.
