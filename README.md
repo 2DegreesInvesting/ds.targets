@@ -38,7 +38,8 @@ The rest of the series will likely cover these topics:
 
 -   Functions: Moving from a sequence of scripts to a pipeline of
     functions.
--   Target factories
+-   [Target
+    factories](https://wlandau.github.io/targetopia/contributing.html#target-factories).
 -   Best practices.
 -   Debugging.
 
