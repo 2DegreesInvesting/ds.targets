@@ -1,10 +1,10 @@
 library(biglm)
 library(tidyverse)
 
-input <- here::here("objects", "dataset.csv")
-dataset <- read_csv(input, col_types = cols())
+path_in <- here::here("objects", "dataset.csv")
+dataset <- read_csv(path_in, col_types = cols())
 
 fit <- biglm(Ozone ~ Wind + Temp, dataset)
 
-output <- here::here("objects", "fit.rds")
-saveRDS(fit, output)
+path_out <- here::here("objects", "fit.rds")
+saveRDS(fit, path_out)
