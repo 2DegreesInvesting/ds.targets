@@ -11,6 +11,7 @@ source_all <- function(path = "R") {
 
 # Pipeline ----------------------------------------------------------------
 
+
 read_and_clean <- function(path) {
   raw_data <- read_csv(path, col_types = cols())
 

@@ -19,7 +19,6 @@ Packages.
 library(targets)
 ```
 
-
 ```{r}
 tar_make()
 ```

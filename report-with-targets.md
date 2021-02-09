@@ -61,7 +61,7 @@ str(tar_read(target_fit))
 #>   .. ..- attr(*, "order")= int [1:2] 1 1
 #>   .. ..- attr(*, "intercept")= int 1
 #>   .. ..- attr(*, "response")= int 1
-#>   .. ..- attr(*, ".Environment")=<environment: 0x556a85a179a0> 
+#>   .. ..- attr(*, ".Environment")=<environment: 0x55b76e547468> 
 #>  $ n       : int 153
 #>  $ names   : chr [1:3] "(Intercept)" "Wind" "Temp"
 #>  $ weights : NULL
@@ -76,4 +76,4 @@ tar_read(target_hist)
 #> `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![](report_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](report-with-targets_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
