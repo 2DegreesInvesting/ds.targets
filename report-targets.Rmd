@@ -16,28 +16,37 @@ knitr::opts_chunk$set(
 Packages.
 
 ```{r}
-library(targets)
+library(tidyverse)
+library(biglm)
+library(here)
 ```
 
+Functions.
 
 ```{r}
-tar_make()
+source(here("R", "functions.R"))
+```
+
+Create objects.
+
+```{r}
+source_all("R")
 ```
 
 ## Data
 
 ```{r}
-tar_read(target_data)
+dataset
 ```
 
 ## Model
 
 ```{r}
-str(tar_read(target_fit))
+fit
 ```
 
 ## Plot
 
 ```{r}
-tar_read(target_hist)
+hist
 ```
