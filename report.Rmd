@@ -6,7 +6,8 @@ output: github_document
 knitr::opts_chunk$set(
   echo = TRUE,
   comment = "#>",
-  collapse = TRUE
+  collapse = TRUE,
+  cache = FALSE
 )
 ```
 
