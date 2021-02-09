@@ -34,29 +34,17 @@ source_all("R")
 
 ## Data
 
-* Get raw data.
-* Tidy.
-* Save.
-
 ```{r}
 dataset
 ```
 
 ## Model
 
-* Get clean data (saved).
-* Fit a model.
-* Save.
-
 ```{r}
 fit
 ```
 
 ## Plot
-
-* Get model (saved).
-* Plot.
-* Save.
 
 ```{r}
 hist
