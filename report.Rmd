@@ -1,0 +1,63 @@
+---
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  comment = "#>",
+  collapse = TRUE
+)
+```
+
+## Setup
+
+Packages.
+
+```{r}
+library(tidyverse)
+library(biglm)
+library(here)
+```
+
+Functions.
+
+```{r}
+source(here("R", "functions.R"))
+```
+
+Create objects.
+
+```{r}
+source_all("R")
+```
+
+## Data
+
+* Get raw data.
+* Tidy.
+* Save.
+
+```{r}
+dataset
+```
+
+## Model
+
+* Get clean data (saved).
+* Fit a model.
+* Save.
+
+```{r}
+fit
+```
+
+## Plot
+
+* Get model (saved).
+* Plot.
+* Save.
+
+```{r}
+hist
+```

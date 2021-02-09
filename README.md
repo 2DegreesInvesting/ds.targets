@@ -19,9 +19,7 @@ Objectives:
 
 -   Setup a file “\_targets.R” and explore its
     [structure](https://books.ropensci.org/targets/walkthrough.html#file-structure).
-
 -   Try common functions:
-
     -   `tar_script()`.
     -   `tar_edit()`.
     -   `tar_glimpse()`.
@@ -29,9 +27,7 @@ Objectives:
     -   `tar_visnetwork()`.
     -   `tar_objects()`.
     -   `tar_read()`.
-
 -   Create a report using targets.
-
 -   Understand the benefit.
 
 ### Functions
