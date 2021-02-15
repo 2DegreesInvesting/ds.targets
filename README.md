@@ -19,7 +19,9 @@ Objectives:
 
 -   Setup a file “\_targets.R” and explore its
     [structure](https://books.ropensci.org/targets/walkthrough.html#file-structure).
+
 -   Try common functions:
+
     -   `tar_script()`.
     -   `tar_edit()`.
     -   `tar_glimpse()`.
@@ -27,7 +29,9 @@ Objectives:
     -   `tar_visnetwork()`.
     -   `tar_objects()`.
     -   `tar_read()`.
+
 -   Create a report using targets.
+
 -   Understand the benefit.
 
 ### Functions
@@ -46,10 +50,29 @@ Objectives:
 -   Report the analysis as using targets.
 -   Make and use targets from the package targets.
 
+### Target cues
+
+Declare the rules that mark a target as outdated.
+
+-   Understand
+    [`tar_cue()`](https://docs.ropensci.org/targets/reference/tar_cue.html):
+
+``` r
+tar_cue(
+  mode = c("thorough", "always", "never"),
+  command = TRUE,
+  depend = TRUE,
+  format = TRUE,
+  iteration = TRUE,
+  file = TRUE
+)
+```
+
 ### Next
 
 The rest of the series will likely cover these topics:
 
+-   [Cues.](https://docs.ropensci.org/targets/reference/tar_cue.html)
 -   [Target
     factories](https://wlandau.github.io/targetopia/contributing.html#target-factories).
 -   Best practices.
