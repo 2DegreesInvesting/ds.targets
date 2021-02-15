@@ -1,7 +1,6 @@
 library(targets)
 
 source(file.path("R", "functions.R"))
-source_all("R")
 options(tidyverse.quiet = TRUE)
 
 tar_option_set(packages = c(
