@@ -25,21 +25,21 @@ Setup a minimal targets project from scratch.
 
 Objectives:
 
--   Setup a file "\_targets.R" and explore its [structure](https://books.ropensci.org/targets/walkthrough.html#file-structure).
+- Setup a file "\_targets.R" and explore its [structure](https://books.ropensci.org/targets/walkthrough.html#file-structure).
 
--   Try common functions:
+- Try common functions:
 
-    -   `tar_script()`.
-    -   `tar_edit()`.
-    -   `tar_glimpse()`.
-    -   `tar_make()`.
-    -   `tar_visnetwork()`.
-    -   `tar_objects()`.
-    -   `tar_read()`.
+    - `tar_script()`.
+    - `tar_edit()`.
+    - `tar_glimpse()`.
+    - `tar_make()`.
+    - `tar_visnetwork()`.
+    - `tar_objects()`.
+    - `tar_read()`.
 
--   Create a report using targets.
+- Create a report using targets.
 
--   Understand the benefit.
+- Understand the benefit.
 
 ### Functions
 
@@ -47,12 +47,12 @@ This meetup adapts the examples shown in the "Functions" chapter of targets [man
 
 Objectives:
 
--   Explore an analysis structured as a sequence of scripts.
--   Make and use our own targets.
--   Report multiple analyses with the same superset of targets.
--   Transform code chunks into functions.
--   Report the analysis as using targets.
--   Make and use targets from the package targets.
+- Explore an analysis structured as a sequence of scripts.
+- Make and use our own targets.
+- Report multiple analyses with the same superset of targets.
+- Transform code chunks into functions.
+- Report the analysis as using targets.
+- Make and use targets from the package targets.
 
 ### Target cues
 
@@ -76,9 +76,8 @@ tar_cue(
 
 The rest of the series will likely cover these topics:
 
--   [Cues.](https://docs.ropensci.org/targets/reference/tar_cue.html)
--   [Target factories](https://wlandau.github.io/targetopia/contributing.html#target-factories).
--   Best practices.
--   Debugging.
+- Best practices.
+- [Target factories](https://wlandau.github.io/targetopia/contributing.html#target-factories).
+- Debugging.
 
 We'll follow [targets' manual](https://books.ropensci.org/targets/) but loosely.

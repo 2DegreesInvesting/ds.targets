@@ -72,10 +72,9 @@ tar_cue(
 
 The rest of the series will likely cover these topics:
 
--   [Cues.](https://docs.ropensci.org/targets/reference/tar_cue.html)
+-   Best practices.
 -   [Target
     factories](https://wlandau.github.io/targetopia/contributing.html#target-factories).
--   Best practices.
 -   Debugging.
 
 We’ll follow [targets’ manual](https://books.ropensci.org/targets/) but
