@@ -3,9 +3,10 @@ library(targets)
 source(file.path("R", "functions.R"))
 options(col_types = readr::cols())
 
-# TODO
+# Not clean to me
 # * class
-# * command
+# * depend
+# * iteration
 
 tar_option_set(
   packages = "tidyverse",
@@ -17,7 +18,7 @@ tar_option_set(
     # depend = TRUE,
     format = TRUE,
     # iteration = TRUE,
-    # file = TRUE
+    file = TRUE
   ),
   format = "rds"
 )
