@@ -52,37 +52,19 @@ Objectives:
 
 ### Target cues
 
-Declare the rules that mark a target as outdated.
+This meetup covers the rules that mark a target as outdated. It explores
+the helpfile of
+[`tar_cue()`](https://docs.ropensci.org/targets/reference/tar_cue.html).
+After this session you will be more able to predict when `tar_make()`
+will either skip or run a target, and to set the options that trigger
+the behavior you want.
+
+Objective:
 
 -   Understand the
     [details](https://docs.ropensci.org/targets/reference/tar_cue.html#details)
     of
-    [`tar_cue()`](https://docs.ropensci.org/targets/reference/tar_cue.html):
-    -   *There is no metadata record of the target.*
-    -   *The target errored last run.*
-    -   The target has a different class than it did before.
-    -   The cue mode equals “always”.
-    -   The cue mode does not equal “never”.
-    -   The command metadata field (the hash of the R command) is
-        different from last time.
-    -   The depend metadata field (the hash of the immediate upstream
-        dependency targets and global objects) is different from last
-        time.
-    -   The storage format is different from last time.
-    -   The iteration mode is different from last time.
-    -   A target’s file (either the one in \_targets/objects/ or a
-        dynamic file) does not exist or changed since last time.
-
-``` r
-tar_cue(
-  mode = c("thorough", "always", "never"),
-  command = TRUE,
-  depend = TRUE,
-  format = TRUE,
-  iteration = TRUE,
-  file = TRUE
-)
-```
+    [`tar_cue()`](https://docs.ropensci.org/targets/reference/tar_cue.html).
 
 ### Next
 
