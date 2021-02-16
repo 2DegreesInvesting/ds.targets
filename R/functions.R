@@ -1,17 +1,7 @@
-read_and_clean <- function(path) {
-  raw_data <- read_csv(path, col_types = cols())
-
-  raw_data %>%
-    mutate(Ozone = replace_na(Ozone, mean(Ozone, na.rm = TRUE)))
+read <- function(path, ...) {
+  read_csv(path, col_types = getOption("col_types"))
 }
 
-fit_model <- function(data) {
-  biglm(Ozone ~ Wind + Temp, data)
+clean <- function(raw) {
+  mutate(raw, Ozone = replace_na(Ozone, mean(Ozone, na.rm = TRUE)))
 }
-
-create_plot <- function(data) {
-  ggplot(data) +
-    geom_histogram(aes(x = Ozone)) +
-    theme_gray(24)
-}
-
