@@ -1,5 +1,5 @@
 read <- function(path, ...) {
-  read_csv(path, col_types = getOption("col_types"))
+  read_csv(path, col_types = cols())
 }
 
 clean <- function(raw) {

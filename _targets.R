@@ -1,12 +1,11 @@
 library(targets)
 
 source(file.path("R", "functions.R"))
-options(col_types = readr::cols())
 
 # Not clean to me
 # * class
-# * depend
 # * iteration
+# * file
 
 tar_option_set(
   packages = "tidyverse",
@@ -16,9 +15,7 @@ tar_option_set(
     # mode = "thorough",
     # command = TRUE,
     # depend = TRUE,
-    format = TRUE,
-    # iteration = TRUE,
-    file = TRUE
+    # format = TRUE
   ),
   format = "rds"
 )
@@ -26,5 +23,5 @@ tar_option_set(
 list(
   tar_target(path, "data/raw_data.csv", format = "file"),
   tar_target(raw, read(path)),
-  tar_target(data, clean(raw))
+  tar_target(data, clean(raw), cue = tar_cue(depend = TRUE))
 )
