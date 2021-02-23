@@ -44,10 +44,15 @@ sequence of scripts to a workflow based on a pipeline of functions.
 Objectives:
 
 -   Explore an analysis structured as a sequence of scripts.
+
 -   Make and use our own targets.
+
 -   Report multiple analyses with the same superset of targets.
+
 -   Transform code chunks into functions.
+
 -   Report the analysis as using targets.
+
 -   Make and use targets from the package targets.
 
 ### Target cues
@@ -75,6 +80,7 @@ manual.
 Objectives:
 
 -   Understand how to define good targets.
+
 -   Understand how to ignore or depend on changes in R packages.
 
 ### Next
@@ -87,3 +93,21 @@ The rest of the series will likely cover these topics:
 
 We’ll follow [targets’ manual](https://books.ropensci.org/targets/) but
 loosely.
+
+### Resources
+
+-   Repo: <https://github.com/2DegreesInvesting/ds-targets>
+
+-   Will’s bio: <https://wlandau.github.io/about.html>
+
+-   10’ intro: <https://youtu.be/GRqKJBaC5g4>
+
+-   Website: <https://docs.ropensci.org/targets/>
+
+-   1/2 day tutorial: <https://github.com/wlandau/targets-tutorial>
+
+-   Manual: <https://books.ropensci.org/targets/>
+
+-   [R packages](https://r-pkgs.org/), particularly [The whole
+    game](https://r-pkgs.org/whole-game.html) and [The package
+    within](https://r-pkgs.org/package-within.html)
