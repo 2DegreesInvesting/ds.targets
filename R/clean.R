@@ -3,11 +3,12 @@
 #' @param raw A data frame.
 #'
 #' @return A data frame.
-#' @export
+#' @keywords internal
 #'
 #' @examples
 #' clean(airquality)
 #' @importFrom dplyr .data
+#' @noRd
 clean <- function(raw) {
   dplyr::mutate(
     raw,
