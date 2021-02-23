@@ -7,3 +7,6 @@ report-vanilla_cache
 report-targets.html
 .Rhistory
 rsconnect/
+ds.targets.Rcheck/
+ds.targets*.tar.gz
+ds.targets*.tgz

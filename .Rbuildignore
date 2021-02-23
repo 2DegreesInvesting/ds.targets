@@ -1,0 +1,11 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^ds.targets\.Rcheck$
+^ds.targets.*\.tar\.gz$
+^ds.targets.*\.tgz$
+^_config\.yml$
+^_targets$
+^README\.Rmd$
+^_targets\.R$
+^LICENSE\.md$
+^data-raw$
