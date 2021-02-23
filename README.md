@@ -69,8 +69,8 @@ Objective:
 ### Best practices
 
 This meetup covers selected topics from the chapter [Best
-Practices](#best-practices)(<https://books.ropensci.org/targets/practices>
-of target’s manual.
+Practices](https://books.ropensci.org/targets/practices) of target’s
+manual.
 
 Objectives:
 
