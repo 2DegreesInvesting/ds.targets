@@ -66,11 +66,20 @@ Objective:
     of
     [`tar_cue()`](https://docs.ropensci.org/targets/reference/tar_cue.html).
 
+### Best practices
+
+This meetup covers selected topics from the chapter [Best
+Practices](#best-practices) of target’s manual.
+
+Objectives:
+
+-   Understand how to define good targets.
+-   Understand how to ignore or depend on changes in R packages.
+
 ### Next
 
 The rest of the series will likely cover these topics:
 
--   Best practices.
 -   [Target
     factories](https://wlandau.github.io/targetopia/contributing.html#target-factories).
 -   Debugging.
