@@ -20,6 +20,7 @@ knitr::opts_chunk$set(
 
 ```{r}
 library(targets)
+library(ggplot2)
 ```
 
 
@@ -59,16 +60,12 @@ any(is.na(clean_data$Ozone))
 
 To explored changes in `Ozone` through time we use a linear model.
 
-```{r}
-linear_model <- tar_read(model)
-```
-
 ### Results
 
 Here are our results:
 
 ```{r}
-library()
+ggplot(clean_data, aes(Day, Ozone)) + geom_smooth(method = "lm")
 ```
 
 ### Conclusion
