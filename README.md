@@ -136,3 +136,5 @@ loosely.
 -   [R packages](https://r-pkgs.org/), particularly [The whole
     game](https://r-pkgs.org/whole-game.html) and [The package
     within](https://r-pkgs.org/package-within.html)
+
+-   [Targetopia](https://wlandau.github.io/targetopia/).

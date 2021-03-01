@@ -9,3 +9,6 @@
 ^_targets\.R$
 ^LICENSE\.md$
 ^data-raw$
+^vignettes/articles$
+^report-model-summary\.Rmd$
+^report-model-summary\.md$

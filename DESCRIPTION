@@ -12,10 +12,13 @@ License: file LICENSE
 Imports: 
     dplyr,
     readr,
-    tidyr
+    tidyr,
+    stats
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Depends: 
     R (>= 2.10)
+Suggests: 
+    rmarkdown
