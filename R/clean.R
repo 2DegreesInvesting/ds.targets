@@ -5,8 +5,6 @@
 #' @return A data frame.
 #' @export
 #'
-#' @keywords internal
-#'
 #' @examples
 #' clean(airquality)
 #' @importFrom dplyr .data

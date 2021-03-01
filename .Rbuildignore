@@ -12,3 +12,6 @@
 ^vignettes/articles$
 ^report-model-summary\.Rmd$
 ^report-model-summary\.md$
+^report-plot\.md$
+^report-plot\.Rmd$
+^report-plot_files$

@@ -68,7 +68,7 @@ linear_model <- tar_read(model)
 Here are our results:
 
 ```{r}
-library()
+summary(linear_model)
 ```
 
 ### Conclusion
