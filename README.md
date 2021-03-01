@@ -90,6 +90,24 @@ Objectives:
 
 -   Understand how to ignore or depend on changes in R packages.
 
+### External files and literate programming
+
+This meetup covers selected topics from the the chapter [External files
+and literate programming](https://books.ropensci.org/targets/files.html)
+of targets’s manual.
+
+Objectives:
+
+-   Understand what it means for a file to be external.
+
+-   Understand how to use external files as inputs and outputs.
+
+-   Use a superset of targets in a subset of workflows (rmarkdown
+    files).
+
+-   Use a targets factory to render rmarkdown reports inside the targets
+    pipeline.
+
 ### Next
 
 The rest of the series will likely cover these topics:

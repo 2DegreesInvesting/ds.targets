@@ -11,7 +11,8 @@ knitr::opts_chunk$set(
 )
 ```
 
-A series of meetups about data pipelines with the package "[targets](https://docs.ropensci.org/targets/)".
+A series of meetups about data pipelines with the package
+"[targets](https://docs.ropensci.org/targets/)".
 
 ## Syllabus
 
@@ -49,7 +50,10 @@ Objectives:
 
 ### Functions
 
-This meetup adapts the examples shown in the "Functions" chapter of targets [manual](https://books.ropensci.org/targets/). It covers how to refactor a data science project, moving from a workflow based on a sequence of scripts to a workflow based on a pipeline of functions.
+This meetup adapts the examples shown in the "Functions" chapter of targets
+[manual](https://books.ropensci.org/targets/). It covers how to refactor a data
+science project, moving from a workflow based on a sequence of scripts to a
+workflow based on a pipeline of functions.
 
 Objectives:
 
@@ -90,11 +94,29 @@ Objectives:
 
 * Understand how to ignore or depend on changes in R packages.
 
+
+### External files and literate programming
+
+This meetup covers selected topics from the the chapter [External files and
+literate programming](https://books.ropensci.org/targets/files.html) of
+targets's manual.
+
+Objectives:
+
+* Understand what it means for a file to be external.
+
+* Understand how to use external files as inputs and outputs.
+
+* Use a superset of targets in a subset of workflows (rmarkdown files).
+
+* Use a targets factory to render rmarkdown reports inside the targets pipeline.
+
 ### Next
 
 The rest of the series will likely cover these topics:
 
-- [Target factories](https://wlandau.github.io/targetopia/contributing.html#target-factories).
+- [Target
+factories](https://wlandau.github.io/targetopia/contributing.html#target-factories).
 - Debugging.
 
 We'll follow [targets' manual](https://books.ropensci.org/targets/) but loosely.
@@ -103,7 +125,7 @@ We'll follow [targets' manual](https://books.ropensci.org/targets/) but loosely.
 
 * Repo: https://github.com/2DegreesInvesting/ds-targets
 
-* Will’s bio: https://wlandau.github.io/about.html
+* Will's bio: https://wlandau.github.io/about.html
 
 * 10’ intro: https://youtu.be/GRqKJBaC5g4
 
@@ -113,4 +135,6 @@ We'll follow [targets' manual](https://books.ropensci.org/targets/) but loosely.
 
 * Manual: https://books.ropensci.org/targets/
 
-* [R packages](https://r-pkgs.org/), particularly [The whole game](https://r-pkgs.org/whole-game.html) and [The package within](https://r-pkgs.org/package-within.html)
+* [R packages](https://r-pkgs.org/), particularly [The whole
+game](https://r-pkgs.org/whole-game.html) and [The package
+within](https://r-pkgs.org/package-within.html)
