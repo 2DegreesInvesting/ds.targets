@@ -1,7 +1,7 @@
 library(targets)
 library(tarchetypes)
 
-options(TZ="Germany/Berlin")
+options(TZ = "Germany/Berlin")
 tar_option_set(imports = "ds.targets", packages = c("ds.targets"))
 
 list(
