@@ -6,6 +6,13 @@ A series of meetups about data pipelines with the package
 
 ## Syllabus
 
+Except for the first one, each item in this syllabus corresponds to a
+meetup and a GitHub release that preserves a snapshot of this repository
+exactly as it was shown during thee meetup.
+
+Go to
+[releases](https://github.com/2DegreesInvesting/ds-targets/releases).
+
 ### Motivation
 
 [Meet Will
