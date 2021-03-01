@@ -10,8 +10,8 @@
 ^LICENSE\.md$
 ^data-raw$
 ^vignettes/articles$
-^report-model-summary\.Rmd$
-^report-model-summary\.md$
-^report-plot\.md$
-^report-plot\.Rmd$
-^report-plot_files$
+^lm\.Rmd$
+^lm\.md$
+^plot\.Rmd$
+^plot\.md$
+^plot_files$

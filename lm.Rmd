@@ -22,7 +22,6 @@ knitr::opts_chunk$set(
 library(targets)
 ```
 
-
 ### Introduction
 
 This report summarizes our results, mostly as terse calls to `tar_read()`. 
