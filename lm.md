@@ -18,7 +18,7 @@ pipeline:
     #> library(targets)
     #> library(tarchetypes)
     #> 
-    #> options(TZ="Germany/Berlin")
+    #> options(TZ = "Germany/Berlin")
     #> tar_option_set(imports = "ds.targets", packages = c("ds.targets"))
     #> 
     #> list(
@@ -28,7 +28,8 @@ pipeline:
     #>   # Internal: _targets/objects/
     #>   tar_target(raw, command = read(path)),
     #>   tar_target(data, clean(raw)),
-    #>   tar_target(model, linear_model(data)),
+    #>   tar_target(lm_fit, fit_lm(data)),
+    #>   tar_target(lm_plot, plot_lm(data)),
     #> 
     #>   # External
     #>   tarchetypes::tar_render(lm, "lm.Rmd", output_format = "md_document"),
@@ -55,7 +56,7 @@ missing.
     #>     Ozone = tidyr::replace_na(.data$Ozone, mean(.data$Ozone, na.rm = TRUE))
     #>   )
     #> }
-    #> <bytecode: 0x54b06e0>
+    #> <bytecode: 0x3b90d00>
     #> <environment: namespace:ds.targets>
 
     # Before
@@ -70,13 +71,13 @@ missing.
 
 To explored changes in `Ozone` through time we use a linear model.
 
-    linear_model <- tar_read(model)
+    model <- tar_read(lm_fit)
 
 ### Results
 
 Here are our results:
 
-    summary(linear_model)
+    summary(model)
     #> 
     #> Call:
     #> stats::lm(formula = Ozone ~ Day, data = data)

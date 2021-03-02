@@ -13,7 +13,8 @@ Imports:
     dplyr,
     readr,
     tidyr,
-    stats
+    stats,
+    ggplot2
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)

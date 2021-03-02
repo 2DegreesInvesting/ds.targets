@@ -6,7 +6,9 @@
 #' @export
 #'
 #' @examples
-#' linear_model(airquality)
-linear_model <- function(data) {
+#' fit_lm(airquality)
+fit_lm <- function(data) {
+  Ozone <- NULL
+  Day <- NULL
   stats::lm(Ozone ~ Day, data = data)
 }

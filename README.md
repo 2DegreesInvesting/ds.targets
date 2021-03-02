@@ -92,9 +92,9 @@ Objectives:
 
 ### External files and literate programming
 
-This meetup covers selected topics from the the chapter [External files
-and literate programming](https://books.ropensci.org/targets/files.html)
-of targets’s manual.
+This meetup covers selected topics from the chapter [External files and
+literate programming](https://books.ropensci.org/targets/files.html) of
+targets’s manual.
 
 Objectives:
 

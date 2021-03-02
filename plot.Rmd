@@ -23,10 +23,9 @@ library(targets)
 library(ggplot2)
 ```
 
-
 ### Introduction
 
-This report summarizes our results, mostly as terse calls to `tar_read()`. 
+[This report](https://github.com/2DegreesInvesting/ds.targets/blob/main/lm.md) summarizes our results, mostly as terse calls to `tar_read()`. 
 For implementation details, see the underlying targets pipeline:
 
 ```{r}
@@ -65,7 +64,7 @@ To explored changes in `Ozone` through time we use a linear model.
 Here are our results:
 
 ```{r}
-ggplot(clean_data, aes(Day, Ozone)) + geom_smooth(method = "lm")
+tar_read(lm_plot)
 ```
 
 ### Conclusion

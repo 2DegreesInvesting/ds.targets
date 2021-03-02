@@ -59,7 +59,7 @@ any(is.na(clean_data$Ozone))
 To explored changes in `Ozone` through time we use a linear model.
 
 ```{r}
-linear_model <- tar_read(model)
+model <- tar_read(lm_fit)
 ```
 
 ### Results
@@ -67,7 +67,7 @@ linear_model <- tar_read(model)
 Here are our results:
 
 ```{r}
-summary(linear_model)
+summary(model)
 ```
 
 ### Conclusion

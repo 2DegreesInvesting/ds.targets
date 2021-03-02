@@ -9,9 +9,9 @@
 ^_targets\.R$
 ^LICENSE\.md$
 ^data-raw$
-^vignettes/articles$
 ^lm\.Rmd$
 ^lm\.md$
 ^plot\.Rmd$
 ^plot\.md$
 ^plot_files$
+^output$
