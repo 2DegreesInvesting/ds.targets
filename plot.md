@@ -1,8 +1,4 @@
-> The bulk of the computation should have already happened upstream, and
-> the most of the code chunks in the report itself should be terse calls
-> to tar\_read() and tar\_load().
-
-–<https://books.ropensci.org/targets/files.html#literate-programming>
+# A plot suggests ozone levels are stable
 
 ### Setup
 
@@ -10,6 +6,12 @@
     library(ggplot2)
 
 ### Introduction
+
+> The bulk of the computation should have already happened upstream, and
+> the most of the code chunks in the report itself should be terse calls
+> to tar\_read() and tar\_load().
+
+–<https://books.ropensci.org/targets/files.html#literate-programming>
 
 [This
 report](https://github.com/2DegreesInvesting/ds.targets/blob/main/lm.md)
@@ -20,7 +22,6 @@ implementation details, see the underlying targets pipeline:
     #> library(targets)
     #> library(tarchetypes)
     #> 
-    #> options(TZ = "Germany/Berlin")
     #> tar_option_set(imports = "ds.targets", packages = c("ds.targets"))
     #> 
     #> list(
@@ -59,7 +60,7 @@ missing.
     #>     Ozone = tidyr::replace_na(.data$Ozone, mean(.data$Ozone, na.rm = TRUE))
     #>   )
     #> }
-    #> <bytecode: 0x41ac058>
+    #> <bytecode: 0x4d0b088>
     #> <environment: namespace:ds.targets>
 
     # Before

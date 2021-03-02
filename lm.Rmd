@@ -1,13 +1,8 @@
 ---
-title: "A linear model suggests ozone levels are stable"
 output: github_document
 ---
 
-> The bulk of the computation should have already happened upstream, and the
-most of the code chunks in the report itself should be terse calls to tar_read()
-and tar_load().
-
---https://books.ropensci.org/targets/files.html#literate-programming
+# A linear model suggests ozone levels are stable
 
 ### Setup
 
@@ -23,6 +18,12 @@ library(targets)
 ```
 
 ### Introduction
+
+> The bulk of the computation should have already happened upstream, and the
+most of the code chunks in the report itself should be terse calls to tar_read()
+and tar_load().
+
+--https://books.ropensci.org/targets/files.html#literate-programming
 
 This report summarizes our results, mostly as terse calls to `tar_read()`. 
 For implementation details, see the underlying targets pipeline:

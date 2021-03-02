@@ -1,14 +1,16 @@
-> The bulk of the computation should have already happened upstream, and
-> the most of the code chunks in the report itself should be terse calls
-> to tar\_read() and tar\_load().
-
-–<https://books.ropensci.org/targets/files.html#literate-programming>
+# A linear model suggests ozone levels are stable
 
 ### Setup
 
     library(targets)
 
 ### Introduction
+
+> The bulk of the computation should have already happened upstream, and
+> the most of the code chunks in the report itself should be terse calls
+> to tar\_read() and tar\_load().
+
+–<https://books.ropensci.org/targets/files.html#literate-programming>
 
 This report summarizes our results, mostly as terse calls to
 `tar_read()`. For implementation details, see the underlying targets
@@ -18,7 +20,6 @@ pipeline:
     #> library(targets)
     #> library(tarchetypes)
     #> 
-    #> options(TZ = "Germany/Berlin")
     #> tar_option_set(imports = "ds.targets", packages = c("ds.targets"))
     #> 
     #> list(
@@ -32,6 +33,7 @@ pipeline:
     #>   tar_target(lm_plot, plot_lm(data)),
     #> 
     #>   # External
+    #>   tar_target(lm_figure, save_plot(path = "output/plot.png", plot = lm_plot)),
     #>   tarchetypes::tar_render(lm, "lm.Rmd", output_format = "md_document"),
     #>   tarchetypes::tar_render(plot, "plot.Rmd", output_format = "md_document")
     #> )
@@ -56,7 +58,7 @@ missing.
     #>     Ozone = tidyr::replace_na(.data$Ozone, mean(.data$Ozone, na.rm = TRUE))
     #>   )
     #> }
-    #> <bytecode: 0x3b90d00>
+    #> <bytecode: 0x4d0b088>
     #> <environment: namespace:ds.targets>
 
     # Before
