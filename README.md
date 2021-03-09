@@ -7,11 +7,13 @@ A series of meetups about data pipelines with the package
 ## Syllabus
 
 Except for the first one, each item in this syllabus corresponds to a
-meetup and a GitHub release that preserves a snapshot of this repository
-exactly as it was shown during thee meetup.
+meetup and a GitHub
+[release](https://github.com/2DegreesInvesting/ds-targets/releases) that
+preserves a snapshot of this repository exactly as it was shown during
+thee meetup.
 
-Go to
-[releases](https://github.com/2DegreesInvesting/ds-targets/releases).
+We’ll follow [targets’ manual](https://books.ropensci.org/targets/) but
+loosely.
 
 ### Motivation
 
@@ -124,13 +126,11 @@ Objectives:
 
 ### Next
 
-The rest of the series will likely cover these topics:
-
--   [Target
-    factories](https://wlandau.github.io/targetopia/contributing.html#target-factories).
-
-We’ll follow [targets’ manual](https://books.ropensci.org/targets/) but
-loosely.
+We could cover branching
+([dynamic](https://books.ropensci.org/targets/dynamic.html) and
+[static](https://books.ropensci.org/targets/static.html)) and [targets
+factories](https://wlandau.github.io/targetopia/contributing.html#target-factories),
+but this might also be a good stopping point.
 
 ### Resources
 
