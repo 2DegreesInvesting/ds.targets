@@ -111,13 +111,24 @@ Objectives:
 
 * Use a targets factory to render rmarkdown reports inside the targets pipeline.
 
+### Debugging
+
+This meetup covers the chapter [Debugging](https://books.ropensci.org/targets/debugging.html) of
+targets's manual.
+
+Objectives:
+
+* Understand three approaches to debugging, which the manual refers to as: 
+    * environment browser,
+    * the debug option,
+    * workspaces.
+
 ### Next
 
 The rest of the series will likely cover these topics:
 
 - [Target
 factories](https://wlandau.github.io/targetopia/contributing.html#target-factories).
-- Debugging.
 
 We'll follow [targets' manual](https://books.ropensci.org/targets/) but loosely.
 
